@@ -3,7 +3,6 @@ _____________________________________
 
 
 push(): Adiciona um ou mais elementos ao final do array. É como quando uma nova pessoa entra na fila do supermercado.
-
 let frutas = ['maçã', 'banana'];
 frutas.push('laranja'); // ['maçã', 'banana', 'laranja']
 
