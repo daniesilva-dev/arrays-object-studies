@@ -1,0 +1,111 @@
+"Métodos mais usados em arrays"
+_____________________________________
+
+
+push(): Adiciona um ou mais elementos ao final do array. É como quando uma nova pessoa entra na fila do supermercado.
+
+let frutas = ['maçã', 'banana'];
+frutas.push('laranja'); // ['maçã', 'banana', 'laranja']
+
+
+pop(): Remove o último elemento do array. É como tirar a última pessoa da fila.
+frutas.pop(); // ['maçã', 'banana']
+
+
+shift(): Remove o primeiro elemento do array. É como atender a primeira pessoa na fila.
+frutas.shift(); // ['banana']
+
+
+unshift(): Adiciona um ou mais elementos no início do array. É como quando alguém corta a fila (não faça isso na vida real!).
+frutas.unshift('morango'); // ['morango', 'banana']
+
+
+slice(): Retorna uma cópia de parte do array. É como olhar para algumas pessoas na fila, mas sem removê-las.
+frutas.slice(0, 1); // ['morango']
+
+
+splice(): Remove ou adiciona elementos em uma posição específica. É como dizer "Você, saia da fila" ou "Você, entre aqui".
+frutas.splice(1, 0, 'uva'); // ['morango', 'uva', 'banana']
+
+
+indexOf(): Encontra a posição do primeiro elemento que coincide com o valor especificado. É como perguntar "Em que posição está essa pessoa na fila?"
+frutas.indexOf('banana'); // 2
+
+
+forEach(): Executa uma função para cada elemento do array. É como dar um brinde para cada pessoa na fila.
+frutas.forEach((fruta) => console.log(fruta));
+
+
+map(): Cria um novo array com base em outro, aplicando uma função a cada elemento. É como dar um desconto para cada pessoa na fila e perguntar quanto cada uma vai pagar agora.
+let precosComDesconto = precos.map((preco) => preco * 0.9);
+
+
+filter(): Cria um novo array com todos os elementos que passam em um teste. É como só permitir na fila pessoas com mais de 18 anos, por exemplo.
+let numerosMaioresQueDez = numeros.filter((numero) => numero > 10);
+
+
+reduce(): Reduz o array a um único valor. É como somar a idade de todas as pessoas na fila para saber a idade total.
+let soma = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
+
+
+concat(): Junta dois ou mais arrays. É como juntar duas filas em uma só.
+let todos = homens.concat(mulheres);
+
+
+reverse(): Inverte a ordem dos elementos do array. É como inverter a fila inteira.
+let reverso = frutas.reverse(); // ['banana', 'uva', 'morango']
+
+
+sort(): Ordena os elementos do array. É como colocar a fila em ordem alfabética.
+let ordenado = frutas.sort(); // ['banana', 'morango', 'uva']
+
+
+join(): Junta todos os elementos do array em uma única string. É como pegar os nomes de todas as pessoas na fila e criar uma lista única.
+let string = frutas.join(', '); // "banana, morango, uva"
+
+
+
+=============================================================================================================
+
+
+push(elemento): Adiciona um elemento ao final do array e retorna o novo comprimento do array.
+
+pop(): Remove e retorna o último elemento do array.
+
+shift(): Remove e retorna o primeiro elemento do array, reordenando os índices dos elementos restantes.
+
+unshift(elemento): Adiciona um elemento ao início do array e reordena os índices dos elementos restantes.
+
+concat(array): Combina o array atual com outro array e retorna um novo array resultante da concatenação.
+
+slice(início, fim): Retorna uma parte do array, começando no índice início até o índice fim (não incluso), sem modificar o array original.
+
+splice(início, quantidade, elementos): Remove ou substitui elementos em um array, começando no índice início. Você pode opcionalmente inserir novos elementos no lugar dos removidos.
+
+forEach(função): Itera sobre cada elemento do array e aplica uma função a cada um deles.
+
+map(função): Cria um novo array aplicando uma função a cada elemento do array original e retornando os resultados em um novo array.
+
+filter(função): Cria um novo array contendo apenas os elementos que atendem a uma condição especificada em uma função.
+
+find(função): Retorna o primeiro elemento que atende a uma condição especificada em uma função.
+
+reduce(função, valorInicial): Aplica uma função a um acumulador e a cada elemento do array (da esquerda para a direita) para reduzir o array a um único valor.
+
+some(função): Verifica se pelo menos um elemento do array atende a uma condição especificada em uma função.
+
+every(função): Verifica se todos os elementos do array atendem a uma condição especificada em uma função.
+
+includes(elemento): Verifica se um elemento específico está presente no array e retorna um valor booleano.
+
+indexOf(elemento): Retorna o índice da primeira ocorrência de um elemento no array, ou -1 se o elemento não for encontrado.
+
+join(separador): Combina todos os elementos do array em uma única string, separando-os com o separador especificado.
+
+sort(): Classifica os elementos do array em ordem alfabética (se forem strings) ou em ordem crescente (se forem números).
+
+reverse(): Inverte a ordem dos elementos no array.
+
+isArray(objeto): Verifica se um objeto é um array e retorna um valor booleano.
+
+
