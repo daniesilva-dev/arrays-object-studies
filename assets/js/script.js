@@ -21,6 +21,28 @@ let pessoa = {
   ],
 };
 
+let modeloCarro = pessoa.carros[1].carro = escolherCarro();
+let modelo = pessoa.carros[1].modelo = escolherModelo();
+let cor = pessoa.carros[1].cor = escolherCor();
+
+function escolherCarro() {
+  let selectNomeCarro = document.getElementById('nomeCarros').value;
+  return selectNomeCarro
+}
+
+function escolherModelo() {
+  let selectModeloCarro = document.getElementById('modeloCarros').value;
+  return selectModeloCarro
+}
+
+function escolherCor() {
+  let selectCorCarro = document.getElementById('corCarros').value;
+  return selectCorCarro
+}
+
+
+console.log(pessoa.carros[0]);
+
 //4
 let novoCarro = {carro: "BMW", modelo: "M5", cor: "preta"};
 //let addCarro =  pessoa.carros.push(novoCarro);
@@ -39,7 +61,7 @@ console.log(idade);
 
 //3
 let carro = pessoa.carros[1].carro;
-let modelo = pessoa.carros[1].modelo;
-let cor = pessoa.carros[1].cor;
+//let modelo = pessoa.carros[1].modelo;
+//let cor = pessoa.carros[1].cor;
 console.log(`O carro é uma${carro} do ${modelo} com a cor${cor}`);
 
