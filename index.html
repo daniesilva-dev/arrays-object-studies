@@ -9,21 +9,30 @@
 <body>
     <h3>Nome Carro</h3>
     <select id="nomeCarros" onchange="escolherCarro()">
+        <option value=""></option>
         <option value="Porsh">Porsh</option>
         <option value="Lamborghini">Lamborghini</option>
     </select>
 
     <h3>Modelo Carro</h3>
     <select id="modeloCarros" onchange="escolherModelo()">
+        <option value=""></option>
         <option value="KN">kn</option>
         <option value="urus">urus</option>
     </select>
 
     <h3>Cor Carro</h3>
     <select id="corCarros" onchange="escolherCor()">
+        <option value=""></option>
         <option value="verde">verde</option>
         <option value="preta">preta</option>
     </select>
+
+
+
+    <button id="bt">Bãotão</button>
+
+    <div id="displayObject"></div>
     
     <script src="assets/js/script.js"></script>
 </body>
